@@ -1,17 +1,27 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-<div class="col-12 col-lg-6 offset-lg-3" id="catInput">
+<p id="addCat">Add Category</p>
+<div class="col-12" id="catInput">
     <form method="POST">
       {% csrf_token %}
       {{ form|crispy }}
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
     </form>  
 </div>
 
-{% for parent in categories %}
-  {% if parent.is_top_level %}
-    <p id="{{ parent.id }}">{{parent.name}} <i class="fas fa-chevron-right"></i></p>
+    
+{% for cat in categories %}
+  {% if not cat.parent %}
+  <p>
+    <div class="card card-body catChildToggle" id="{{cat.id}}">
+        <a data-toggle="collapse" href="#childrenOf{{cat.id}}" role="button" aria-expanded="false" aria-controls="childrenOf{{cat.id}}" onclick="getChildren({{cat.id}})">{{cat.name}} <i class="fas fa-chevron-down"></i>
+        </a>  
+      </div>
+    <div class="collapse" id="childrenOf{{cat.id}}">
+    </div>
+  </p>
+      
   {% endif %}
 {% endfor %}
 
