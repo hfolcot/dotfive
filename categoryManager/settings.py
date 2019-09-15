@@ -130,6 +130,7 @@ STATICFILES_DIRS = [
     ]
 
 LOGIN_REDIRECT_URL = 'home'
+LOGIN_URL = 'login'
 
 REST_FRAMEWORK = {
 'DEFAULT_PERMISSION_CLASSES' : ('rest_framework.permissions.IsAuthenticatedOrReadOnly',)

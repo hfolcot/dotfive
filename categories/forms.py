@@ -8,3 +8,21 @@ class NewCatForm(forms.ModelForm):
             'name'
         ]
 
+class NewSubCatForm(forms.ModelForm):
+    class Meta:
+        model = Category
+        fields = [
+            'name',
+            'parent'
+        ]
+        widgets = {'parent':forms.HiddenInput}
+
+class EditCatForm(forms.ModelForm):
+    class Meta:
+        model = Category
+        fields = [
+            'name',
+            'parent',
+            'id'
+        ]
+        widgets = {'id':forms.HiddenInput}
