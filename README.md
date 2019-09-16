@@ -40,13 +40,14 @@ The display has been tested at all screen widths down to 320px.
 
 ## Deployment
 #### These are instructions for deploying the application in a development environment
+Please ensure Python 3.6 or higher is installed on your system.
 1. Unzip the files to a folder of your choice.
 2. Navigate to this folder in your CLI.
-3. Set up a virtual environment if desired and activate.
+3. (Optional/recommended) Set up a virtual environment with `python -m venv venvname` if desired and activate `.\venvname\Scripts\activate`.
 4. Run `pip install -r requirements.txt` to install dependencies.
 5. Rename `env.sample.py` to `env.py` and update the values according to your local environment (at this stage only the secret key is a required environment variable)
 6. Run `python manage.py makemigrations` and then `python manage.py migrate` to create the database.
 7. Run `python manage.py createsuperuser` and enter new credentials. This will set up your admin account.
-8. Run `python manage.py runserver'.
+8. Run `python manage.py runserver`.
 9. The application will be running at `127.0.0.1:8000`. Please note if you are running the application anywhere else you will need to add the address to ALLOWED_HOSTS in the settings.py file under the categoryManager folder.
 10. Admin functionality can be found at /admin.
