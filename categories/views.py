@@ -23,7 +23,6 @@ def categories_view(request):
                 messages.error(request, f"There was a problem")
                 return redirect(categories_view)
         elif 'newCat' in request.POST:
-            print('New cat')
             new_category_form = NewCatForm(request.POST or None)        
             if new_category_form.is_valid():
                 category = new_category_form.save()
