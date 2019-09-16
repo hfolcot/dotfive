@@ -48,5 +48,5 @@ The display has been tested at all screen widths down to 520px.
 6. Run `python manage.py makemigrations` and then `python manage.py migrate` to create the database.
 7. Run `python manage.py createsuperuser` and enter new credentials. This will set up your admin account.
 8. Run `python manage.py runserver'.
-9. The application will be running at `127.0.0.1:8000`.
+9. The application will be running at `127.0.0.1:8000`. Please note if you are running the application anywhere else you will need to add the address to ALLOWED_HOSTS in the settings.py file under the categoryManager folder.
 10. Admin functionality can be found at /admin.
