@@ -17,7 +17,7 @@
         <span data-toggle="tooltip" data-placement="top" title="Add a subcategory to {{cat.name}}"><span class="btn btn-sm btn-success mr-2" data-toggle="modal" data-target="#addSubCatModal" id="addCat{{cat.id}}"
         onclick=addChild({{cat.id}})><i class="fas fa-plus"></i> 
       </span></span>
-      <span class="btn btn-sm btn-info mr-2" href="{% url 'edit' id=cat.id %}" data-toggle="tooltip" data-placement="top" title="Edit or move {{cat.name}}"><i class="fas fa-edit"></i></span>
+      <a class="btn btn-sm btn-info mr-2" href="{% url 'edit' id=cat.id %}" data-toggle="tooltip" data-placement="top" title="Edit or move {{cat.name}}"><i class="fas fa-edit"></i></a>
       </div>
       
     </div>
