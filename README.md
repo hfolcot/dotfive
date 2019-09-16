@@ -39,6 +39,7 @@ Some automated unit tests have been written; these files can be found in the cat
 The display has been tested at all screen widths down to 520px.
 
 ## Deployment
+#### These are instructions for deploying the application in a development environment
 1. Unzip the files to a folder of your choice.
 2. Navigate to this folder in your CLI.
 3. Set up a virtual environment if desired and activate.
