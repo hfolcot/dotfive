@@ -36,7 +36,7 @@ The database uses SQLite.
 
 ## Testing
 Some automated unit tests have been written; these files can be found in the categories folder and names are all prefixed with `test_`.
-The display has been tested at all screen widths down to 520px.
+The display has been tested at all screen widths down to 320px.
 
 ## Deployment
 #### These are instructions for deploying the application in a development environment
