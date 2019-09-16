@@ -1,0 +1,22 @@
+a {
+    color: rgba(0, 0, 0, 0.6)
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.sub-cat-card {
+    padding: 0.5rem;
+    border: none;
+}
+
+.sub-cat-card .btn-secondary {
+    align-self: flex-end;
+    width: 10%;
+}
+
+.collapse {
+    border-bottom: 2px solid rgba(0,0,0,.125);
+}
