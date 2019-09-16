@@ -1,3 +1,7 @@
+body {
+    background-image: url(../img/bg.jpg)
+}
+
 a {
     color: rgba(0, 0, 0, 0.6)
 }
@@ -17,6 +21,6 @@ a:hover {
     width: 10%;
 }
 
-.collapse {
+.collapse-bottom-border {
     border-bottom: 2px solid rgba(0,0,0,.125);
 }

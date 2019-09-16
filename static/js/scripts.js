@@ -32,7 +32,7 @@ var getChildren = function(id, parentCount) {
                     </a>  
                     <div class="d-flex flex-row justify-content-end mb-2"><span data-toggle="tooltip" data-placement="top" title="Add a subcategory to ${item.name}"><span class="btn btn-sm btn-success mr-2" data-toggle="modal" data-target="#addSubCatModal" id="addCat${item.id}" onclick=addChild(${item.id})><i class="fas fa-plus"></i> </span></span><a class="btn btn-sm btn-info mr-2" href="/categories/edit/${item.id}" data-toggle="tooltip" data-placement="top" title="Edit or move ${item.name}"><i class="fas fa-edit"></i></a></div>
                 </div>
-                <div class="collapse" id="childrenOf${item.id}"></div></div>`
+                <div class="collapse collapse-bottom-border" id="childrenOf${item.id}"></div></div>`
                 }
             })
             if (count == 0) {
