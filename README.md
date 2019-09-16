@@ -1,9 +1,3 @@
-django
-sqlite db
-crispy forms
-
-django channels can be used for websockets - not familiar enough at this stage
-
 # Category Manager
 ### Heather Olcot
 An application to manage different items in categories and subcategories of infinite depth.
